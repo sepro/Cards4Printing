@@ -1,0 +1,4 @@
+# Print calibration sheet: 9x white card with a thin frame at the
+# trim boundary. After cutting, the frame should sit flush with the
+# card edges, confirming correct scaling.
+test_cards/print_test.png 9

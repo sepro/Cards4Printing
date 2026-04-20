@@ -1,0 +1,7 @@
+# Test deck - 18 cards total = 3 pages (8 + 8 + 2)
+test_cards/card_1.png 4
+test_cards/card_2.png 4
+test_cards/card_3.png 3
+test_cards/card_4.png 2
+test_cards/card_5.png 3
+test_cards/card_6.png 2

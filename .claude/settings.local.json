@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(.venv/bin/python card_batch.py test_deck.txt -o /tmp/test_out.pdf)",
+      "Bash(python card_batch.py --help)",
+      "Bash(mkdir -p examples output)",
+      "Bash(mv test_deck.txt mytest.txt print_test.txt test_cards examples/)",
+      "Bash(mv mytest.pdf print_test.pdf test_batch.pdf output/)",
+      "Bash(rm -rf __pycache__)",
+      "Bash(.venv/bin/python card_batch.py examples/test_deck.txt -o output/test_deck.pdf)",
+      "Bash(.venv/bin/python card_batch.py examples/print_test.txt -o output/print_test.pdf)",
+      "Bash(.venv/bin/python card_batch.py examples/mytest.txt -o output/mytest.pdf)",
+      "Bash(.venv/bin/pip show *)"
+    ]
+  }
+}

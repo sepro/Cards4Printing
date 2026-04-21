@@ -12,7 +12,11 @@
       "Bash(.venv/bin/python card_batch.py examples/test_deck.txt -o output/test_deck.pdf)",
       "Bash(.venv/bin/python card_batch.py examples/print_test.txt -o output/print_test.pdf)",
       "Bash(.venv/bin/python card_batch.py examples/mytest.txt -o output/mytest.pdf)",
-      "Bash(.venv/bin/pip show *)"
+      "Bash(.venv/bin/pip show *)",
+      "Bash(python card_sheet.py examples/test_cards/card_1.png examples/test_cards/card_2.png examples/test_cards/card_3.png examples/test_cards/card_4.png examples/test_cards/card_5.png examples/test_cards/card_6.png -o /tmp/test_sheet.pdf)",
+      "Bash(python card_batch.py examples/test_deck.txt -o output/test_deck.pdf)",
+      "Bash(python card_batch.py examples/print_test.txt -o output/print_test.pdf)",
+      "Bash(python card_batch.py examples/mytest.txt -o output/mytest.pdf)"
     ]
   }
 }

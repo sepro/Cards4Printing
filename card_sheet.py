@@ -146,9 +146,11 @@ def draw_all_trim_marks(c, origin_x, origin_y, occupied_cells):
                     half = interior_h_tick / 2
                     c.line(mid_x - half, cy, mid_x + half, cy)
                 else:
-                    # Exterior tick extending into the page margin
-                    h_start = cx + dx * (bx + gap)
-                    h_end = h_start + dx * exterior_length
+                    # Exterior tick moved inside the bleed so it isn't
+                    # clipped by the printer's unprintable page margin.
+                    h_start = cx + dx * gap
+                    h_length = min(exterior_length, bx - gap)
+                    h_end = h_start + dx * h_length
                     c.line(h_start, cy, h_end, cy)
 
             # --- Vertical tick (marks a horizontal trim line) ---
@@ -165,8 +167,11 @@ def draw_all_trim_marks(c, origin_x, origin_y, occupied_cells):
                     half = interior_v_tick / 2
                     c.line(cx, mid_y - half, cx, mid_y + half)
                 else:
-                    v_start = cy + dy * (by + gap)
-                    v_end = v_start + dy * exterior_length
+                    # Top/bottom ticks moved inside the bleed so they
+                    # aren't clipped by the printer's unprintable margin.
+                    v_start = cy + dy * gap
+                    v_length = min(exterior_length, by - gap)
+                    v_end = v_start + dy * v_length
                     c.line(cx, v_start, cx, v_end)
 
 

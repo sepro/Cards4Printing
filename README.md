@@ -60,7 +60,7 @@ Getting the correct physical size depends entirely on your printer not scaling t
 
 - **Paper size:** A4
 - **Orientation:** Portrait
-- **Scaling: "Actual size" or 100%** — this is the most important setting. Never use "Fit to page" or "Shrink to fit", as these will resize the cards and make them slightly too small.
+- **Scaling: "Actual size" or 100%** — this is the most important setting. Use this setting first, then check how large the resulting cards are, they should be exactly 63x88mm. If not calculate the % required. On my printer, with borderless printing enabled on photo paper, this turned out to be 98.7%. 
 - **Margins:** Your printer's minimum margins should be fine. The layout leaves roughly 4mm on the sides and 6mm on top and bottom, which is within the printable area of most inkjet and laser printers.
 - **Quality:** Use the highest quality setting your printer offers, especially for inkjet. The source images are 1200 DPI, so a high print resolution will preserve detail.
 - **Paper type:** For best results, use a heavier stock (200–300 gsm cardstock). Set the paper type in your printer driver to match — this affects ink coverage and drying time.
